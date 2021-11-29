@@ -81,7 +81,7 @@ open class GrowingNotificationBanner: BaseNotificationBanner {
     private let verticalSpacing: CGFloat = 14.0
     
     /// Spacing between title and subtitle
-    private let innerSpacing: CGFloat = 2.5
+    private let innerSpacing: CGFloat = 12.5
     
     /// The bottom most label of the notification if a subtitle is provided
     public internal(set) var subtitleLabel: UILabel?
@@ -96,10 +96,10 @@ open class GrowingNotificationBanner: BaseNotificationBanner {
     private let sideViewSize: CGFloat
     
     /// Font used for the title label
-    internal var titleFont: UIFont = UIFont.systemFont(ofSize: 17.5, weight: UIFont.Weight.bold)
+    internal var titleFont: UIFont = UIFont.init(name: "Gibson-Bold", size: 19.0)!
     
     /// Font used for the subtitle label
-    internal var subtitleFont: UIFont = UIFont.systemFont(ofSize: 15.0)
+    internal var subtitleFont: UIFont = UIFont.init(name: "Gibson", size: 14.0)!
     
     public init(
         title: String? = nil,
